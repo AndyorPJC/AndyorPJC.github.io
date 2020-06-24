@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>申请人领取 - 学生校园通行码领取</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Pragma" content="no-cache">
@@ -22,26 +24,7 @@
     <link href="http://ehall.zjut.edu.cn/infoplus/static/themes/default/mobile/css/theme.css?v=20200507-203528"
         rel="stylesheet">
     <link href="http://ehall.zjut.edu.cn/infoplus/static/themes/zjut/mobile/css/theme.css?v=20200507-203528"
-        rel="stylesheet">
-    <script type="text/javascript">
-        var initGlobalVariable = function () {
-            $$.PRINT = false;
-            $$.VIEWS_ONLY = false;
-
-            $$.MOBILE = true;
-
-        };
-
-        var switchView = function () {
-            $("#div_loader_progress").animate({ height: "0", opacity: 0.5 }, 200, function () {
-                $("#div_loader").hide();
-                $("#div_render_container").show();
-
-                //触发全局表单可见事件，这里可以处理和表单中元素的高度、可见等相关的代码
-                $$.visible();
-            });
-        };
-    </script>
+        rel="stylesheet">   
     <style>
         [autoheight] {
             overflow: hidden;
@@ -49,11 +32,6 @@
         }
     </style>
     <style type="text/css"></style>
-    <script src="http://ehall.zjut.edu.cn/infoplus/static/js/Release/render.min.js?v=20200507-203528"></script>
-    <script
-        src="http://ehall.zjut.edu.cn/infoplus/static/themes/default/mobile/js/mobile.js?v=20200507-203528"></script>
-    <script
-        src="http://ehall.zjut.edu.cn/infoplus/static/themes/zjut/mobile/js/render/mobile.js?v=20200507-203528"></script>
     <style type="text/css" media="all" id="infoplus_view_2279_0_style"></style>
     <link type="text/css" media="all" rel="stylesheet" id="infoplus_view_2279_0_cached_link"
         href="http://ehall.zjut.edu.cn/infoplus/form/css/1b17faf0245e53f306dbd0b9a6a25a08.css">
@@ -94,7 +72,7 @@
             <div id="div_content" class="div_content">
                 <div id="header_holder">
                     <div id="title_holder" class="todo">
-                        <div id="title_icon" class="title_icon"><i class="i-icon-menu"></i></div>
+                        <div id="title_icon" class="title_icon"><i>三</i></div>
                         <div id="title_content" style="max-width: 233px;">
                             <nobr>学生校园通行码领取:申请人领取</nobr>
                         </div>
@@ -106,8 +84,7 @@
                     <!-- 1.form command bar -->
                     <div id="command_holder">
                         <div class="clear"></div>
-                        <div id="command_bar_title_icon" class="title_icon todo" style="display: none;"><i
-                                class="i-icon-menu"></i></div>
+                        <div id="command_bar_title_icon" class="title_icon todo" style="display: none;"><i>三</i></div>
                         <ul id="form_command_bar">
                             <li class="command_button" style=""><a class="command_button_content"
                                     name="infoplus_action_2594_1" id="infoplus_action_2594_1">
@@ -121,8 +98,8 @@
                                             id="infoplus_command_menu_8141_1">通过</a></li>
                                 </ul><span class="alpha40 scroll_tip left" style="display: none;">点此区域按钮提交</span>
                             </li>
-                            <li class="tool_button"><a id="FormCommandMore" class="tool_button" href="#"><i
-                                        class="i-icon-more-vert"></i></a></li>
+                            <li class="tool_button"><a id="FormCommandMore" class="tool_button" href="#"><i>→</i></a>
+                            </li>
                             <li class="tool_button hide" style="display: none;"><a id="FormCommandGoTop"
                                     class="tool_button" href="#"><i class="i-icon-publish"></i></a></li>
                         </ul>
@@ -371,102 +348,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="variables_container"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_ORGANIZE_Name" name="_VAR_ACTION_ORGANIZE_Name"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_ORGANIZES_Names" name="_VAR_EXECUTE_ORGANIZES_Names"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_INDEP_ORGANIZE_Name" name="_VAR_EXECUTE_INDEP_ORGANIZE_Name"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_ACCOUNT" name="_VAR_ACTION_ACCOUNT" value="2111712348"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_INDEP_ORGANIZES_Codes" name="_VAR_ACTION_INDEP_ORGANIZES_Codes"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_OWNER_ORGANIZES_Codes" name="_VAR_OWNER_ORGANIZES_Codes"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ADDR"
-                                    name="_VAR_ADDR" value="10.15.0.11"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_URL_Attr"
-                                    name="_VAR_URL_Attr" value="{}"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ENTRY_NUMBER"
-                                    name="_VAR_ENTRY_NUMBER" value="1861658"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_INDEP_ORGANIZES_Names" name="_VAR_EXECUTE_INDEP_ORGANIZES_Names"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_STEP_NUMBER"
-                                    name="_VAR_STEP_NUMBER" value="2148099"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_POSITIONS"
-                                    name="_VAR_POSITIONS" value="21190:6:2111712348
-21190:2:2111712348"><input type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_REALNAME" name="_VAR_ACTION_REALNAME" value="彭江超"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_OWNER_ORGANIZES_Names" name="_VAR_OWNER_ORGANIZES_Names"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_URL"
-                                    name="_VAR_URL" value="http://ehall.zjut.edu.cn/infoplus/form/2148099/render"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_INDEP_ORGANIZES_Names" name="_VAR_ACTION_INDEP_ORGANIZES_Names"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_ORGANIZE_Name" name="_VAR_EXECUTE_ORGANIZE_Name"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_INDEP_ORGANIZES_Codes" name="_VAR_EXECUTE_INDEP_ORGANIZES_Codes"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_RELEASE"
-                                    name="_VAR_RELEASE" value="true"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_POSITIONS" name="_VAR_EXECUTE_POSITIONS"
-                                    value="21190:6:2111712348"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_OWNER_ACCOUNT"
-                                    name="_VAR_OWNER_ACCOUNT" value="2111712348"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_NOW_MONTH"
-                                    name="_VAR_NOW_MONTH" value="6"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_USERCODES" name="_VAR_ACTION_USERCODES" value="2111712348"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_ORGANIZES_Names" name="_VAR_ACTION_ORGANIZES_Names"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_STEP_CODE"
-                                    name="_VAR_STEP_CODE" value="step1"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_ORGANIZE" name="_VAR_ACTION_ORGANIZE" value="21190"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_OWNER_USERCODES" name="_VAR_OWNER_USERCODES" value="2111712348"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_ORGANIZES_Codes" name="_VAR_ACTION_ORGANIZES_Codes"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_ORGANIZE" name="_VAR_EXECUTE_ORGANIZE" value="21190"><input
-                                    type="hidden" class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_INDEP_ORGANIZE" name="_VAR_EXECUTE_INDEP_ORGANIZE"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_EXECUTE_ORGANIZES_Codes" name="_VAR_EXECUTE_ORGANIZES_Codes"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_NOW_DAY"
-                                    name="_VAR_NOW_DAY" value="23"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_INDEP_ORGANIZE" name="_VAR_ACTION_INDEP_ORGANIZE"
-                                    value="21190"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_OWNER_REALNAME" name="_VAR_OWNER_REALNAME" value="彭江超"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_NOW_YEAR"
-                                    name="_VAR_NOW_YEAR" value="2020"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var"
-                                    id="_VAR_ACTION_INDEP_ORGANIZE_Name" name="_VAR_ACTION_INDEP_ORGANIZE_Name"
-                                    value="计算机科学与技术学院、软件学院"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_NOW"
-                                    name="_VAR_NOW" value="1592922113"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ENTRY_NAME"
-                                    name="_VAR_ENTRY_NAME" value="学生校园通行码领取_彭江超"><input type="hidden"
-                                    class="infoplus_control infoplus_hiddenControl infoplus_var" id="_VAR_ENTRY_TAGS"
-                                    name="_VAR_ENTRY_TAGS" value="学生事务,学生,移动端"></div>
+
                         </div>
                     </div>
                 </div>
@@ -481,368 +363,9 @@
             </div>
         </div>
     </div>
-    <script language="JavaScript">
-        //如果发现在iframe里面就加载iframe.css，主要解决jquery的offset计算错误的问题
-        if (self !== top) {
-            var link = document.createElement('link');
-            link.setAttribute("rel", "stylesheet");
-            link.setAttribute("type", "text/css");
-            link.setAttribute("href", "http://ehall.zjut.edu.cn/infoplus/static/css/iframe.css?v=20200507-203528");
-            document.getElementsByTagName("head")[0].appendChild(link);
-        }
-    </script>
 
-
-    <script type="text/javascript">
-        var googleAnalysis = function () {
-
-        };
-
-
-
-        var entrusts = { "entrustee": { "account": "2111712348", "email": "", "phone": "", "title": "", "memberships": {}, "id": "4825a2e6-5259-11e8-b601-0050569b9b9b", "name": "彭江超" }, "entrusted": false };
-
-
-
-        var progressFlag = null;
-
-        //判断是否是移动端APP请求
-        var isMobileApp = function () {
-            return navigator.userAgent.match(/TaskCenterApp/);
-        };
-
-        var progress = function (content, percent, targetPercent, waitMillisecond) {
-
-            if (isMobileApp()) {
-                return;
-            }
-
-            var showPercent = function (p, waitingTimes) {
-                $("#div_loader_progress_percent").css("right", (100 - p) + "%");
-                var $loaderTextDiv = $("#div_loader_text");
-                var $loaderText = $loaderTextDiv.children(".content");
-                $loaderTextDiv.children(".waiting").remove();
-                $loaderText.text(content + "(" + p + "%)");
-
-                if (waitingTimes != null) {
-                    //超过3秒再显示请耐心等待
-                    var waitingString = waitingTimes > 60 ? '请耐心等待' : '';
-                    for (var i = 0, len = Math.floor(waitingTimes / 3) % 6; i < len; i++) {
-                        waitingString += '.';
-                    }
-                    if ($loaderTextDiv.children(".waiting").length == 0) {
-                        var span = document.createElement("span");
-                        $(span).addClass("waiting").text(waitingString);
-                        $loaderTextDiv.append(span);
-                    } else {
-                        $loaderTextDiv.children(".waiting").text(waitingString);
-                    }
-                }
-
-                var $loader = $("#div_loader");
-                if (!$loader.is(":visible")) {
-                    $loader.show();
-                }
-
-            };
-
-            if (progressFlag != null) {
-                clearInterval(progressFlag);
-            }
-
-            showPercent(percent);
-
-            if (targetPercent != null) {
-                var frames = 20,
-                    currentPercent = percent,
-                    percentStep = (targetPercent - percent) / frames,
-                    waitingTimes = 0;
-                var wait = waitMillisecond == null ? 1000 : waitMillisecond;
-
-                progressFlag = setInterval(function () {
-                    currentPercent += percentStep;
-                    currentPercent = Math.floor(currentPercent);
-                    if (currentPercent > targetPercent) {
-                        waitingTimes++;
-                        //showPercent(targetPercent, waitingTimes);
-                        showPercent(targetPercent);
-                    } else {
-                        showPercent(currentPercent);
-                    }
-
-                }, wait / frames)
-            }
-        };
-
-        var loadFormError = function () {
-            if (progressFlag != null) {
-                clearInterval(progressFlag);
-            }
-
-            var title = "加载流程失败",
-                $loaderTextDiv = $("#div_loader_text"),
-                $loaderText = $loaderTextDiv.children(".content");
-            $loaderTextDiv.children(".waiting").remove();
-            $loaderText.text(title);
-            $("#div_loader_progress_percent").css("right", "0").css("background-color", "red");
-        };
-
-        var workflowId, formStepId, instanceId;
-
-        formStepId = 2148099;
-        instanceId = "";
-        workflowId = null;
-
-
-        var instanceView = false;
-
-        var adminView = false;
-
-
-
-        var transformer = null;
-
-
-        var setInitRemarkWidth = function () {
-            //非移动版初始时候设置历史宽度）
-            if (!$$.MOBILE) {
-                var flag = setInterval(function () {
-                    var width = $("#render_holder")[0].clientWidth;
-                    if (width > 0) {
-                        //不设置宽度的话，如果历史备注比较长会撑大整个DIV
-                        //如果全部的view都是自动宽度，那么remarkholder宽度设成100%，不需要这里再设置了
-                        if (!$$.params.allAutoWidth) {
-                            $$.params.holder.remark.css("width", width + "px");
-                        } else {
-                            $$.params.holder.remark.css("width", "100%");
-                        }
-                        clearInterval(flag);
-                        $$.params.currentWidth = width;
-                        $$.resize(width);
-                    }
-                }, 100);
-
-            }
-        };
-
-        var startLoad = function () {
-
-            transformer.load().done(function () {
-
-                setInitRemarkWidth();
-                transformer.registerGlobalEvents();
-
-                //渲染完毕
-                progress($$.lt("load.finish"), 100);
-
-                //如果是被嵌入在移动app中，那么调用webViewInterface函数
-                if (isMobileApp()) {
-                    if (window['webViewInterface'] !== undefined && window['webViewInterface']['loaded'] !== undefined) {
-                        try {
-                            webViewInterface.loaded();
-                        } catch (ignore) {
-                        }
-                    }
-                }
-
-                setTimeout(switchView, 0);
-
-
-
-                //触发ready事件
-                $$.ready();
-
-                googleAnalysis();
-
-            });
-        };
-
-        var startPreview = function () {
-            var previewConfig = {
-                app: {
-
-                    iconUrl: "http://ehall.zjut.edu.cn/infoplus/static/img/default_workflow_icon.png",
-
-                    iconPalette: "",
-                    name: "",
-                    department: "",
-                    contact: "",
-                    rating: 0,
-                    rated: 0
-                },
-                release: "",
-                idc: "",
-
-                clear: false,
-
-                startable: false
-            };
-
-            transformer.preview(previewConfig).done(function () {
-                //渲染完毕
-                /*
-                if (!$$.MOBILE) {
-                    setInitRemarkWidth();
-                } else {
-                    $$.resize($(window).width());
-                }
-                */
-                setInitRemarkWidth();
-                transformer.registerGlobalEvents();
-
-
-                //如果是被嵌入在移动app中，那么调用webViewInterface函数
-                if (isMobileApp()) {
-                    if (window['webViewInterface'] !== undefined && window['webViewInterface']['loaded'] !== undefined) {
-                        try {
-                            webViewInterface.loaded();
-                        } catch (ignore) {
-                        }
-                    }
-                }
-
-                setTimeout(switchView, 0);
-
-                //触发ready事件
-                $$.ready();
-
-                googleAnalysis();
-            });
-        };
-
-        var loadTransformer = function () {
-
-            initGlobalVariable();
-
-            if ($$.MOBILE) {
-                var width = $(window).width();
-                if (width > 0) {
-                    $("#form_remark_holder").css("width", width + "px");
-                    $("#form_holder").css("width", width + "px");
-                }
-            }
-
-            var $commandHolder = $("#command_holder");
-
-            transformer = new InfoPlus.Transformer({
-                formStepId: formStepId,
-                instanceId: instanceId,
-                workflowId: workflowId,
-                instanceView: instanceView,
-                adminView: adminView,
-
-                userId: "4825a2e6-5259-11e8-b601-0050569b9b9b",
-                account: "2111712348",
-                tenantId: "5f206195-366b-444f-86e3-a23d4c350c18",
-                tenantDomain: "zjut.edu.cn",
-                synthesizeEmail: false,
-                tenantTimeZoneOffset: 28800,
-                tenantReadOnlyStyle: "Label",
-                lang: "zh",
-
-                entrusts: entrusts,
-
-                url_print: "http://ehall.zjut.edu.cn/infoplus/form/2148099/print",
-                url_download_pdf: "http://ehall.zjut.edu.cn/infoplus/form/2148099/export.pdf",
-                url_download_word: "http://ehall.zjut.edu.cn/infoplus/form/2148099/export.docx",
-
-                url_reLogin: "http://ehall.zjut.edu.cn/infoplus/form/reLogin",
-                lib_ckeditor: "http://ehall.zjut.edu.cn/infoplus/static/js/lib/ck/ckeditor.js",
-
-                interface_render: "http://ehall.zjut.edu.cn/infoplus/interface/render",
-                interface_preview: "http://ehall.zjut.edu.cn/infoplus/interface/preview",
-                interface_start: "http://ehall.zjut.edu.cn/infoplus/interface/start",
-                interface_list_remarks: "http://ehall.zjut.edu.cn/infoplus/interface/instance/{id}/progress",
-                interface_list_next_steps: "http://ehall.zjut.edu.cn/infoplus/interface/listNextStepsUsers",
-                interface_do_action: "http://ehall.zjut.edu.cn/infoplus/interface/doAction",
-                interface_withdraw: "http://ehall.zjut.edu.cn/infoplus/interface/withdraw",
-                interface_kill: "http://ehall.zjut.edu.cn/infoplus/interface/kill",
-                interface_delete_attachment: "http://ehall.zjut.edu.cn/infoplus/interface/deleteAttachment",
-                interface_save: "http://ehall.zjut.edu.cn/infoplus/interface/save",
-                interface_fieldChange: "http://ehall.zjut.edu.cn/infoplus/interface/fieldChanging",
-                interface_buttonClick: "http://ehall.zjut.edu.cn/infoplus/interface/fieldChanging",
-                interface_suggest: "http://ehall.zjut.edu.cn/infoplus/interface/suggest",
-                interface_suggestInitialize: "http://ehall.zjut.edu.cn/infoplus/interface/suggestInitialize",
-                interface_thing: "http://ehall.zjut.edu.cn/infoplus/interface/thing",
-                interface_printInvoice: "",
-
-                interface_entrust: "http://ehall.zjut.edu.cn/infoplus/interface/entrust",
-                interface_users: "http://ehall.zjut.edu.cn/infoplus/interface/suggest",
-                interface_compare: "http://ehall.zjut.edu.cn/infoplus/interface/data",
-                interface_ckUploadImage: "http://ehall.zjut.edu.cn/infoplus/interface/ckUploadImage",
-                interface_changePriority: "http://ehall.zjut.edu.cn/infoplus/interface/priority",
-                interface_attachment: "http://ehall.zjut.edu.cn/infoplus/interface/attachment",
-                interface_attachmentToken: "http://ehall.zjut.edu.cn/infoplus/interface/attachmentToken",
-                interface_graphql: "http://ehall.zjut.edu.cn/infoplus/interface/graphql",
-
-                copyright: "版权所有 © 浙江工业大学",
-
-                base_url: '/infoplus/'
-
-            });
-
-            //transformer.registerGlobalEvents();
-
-
-            //参数上要求弹出委托对话框或者不存在委托(调试)人情况下，显示委托选人对话框
-            if (transformer.entrust === "true" && !(transformer.entrusts != null && transformer.entrusts.entruster != null)) {
-                $IU.chooseEntrust(transformer.entrusts, null, ($$.PREVIEW ? startPreview : startLoad), transformer.interface_entrust);
-            } else {
-                if ($$.PREVIEW) {
-                    startPreview();
-                } else {
-                    startLoad();
-                }
-            }
-
-        };
-
-        //var __file__ = null;
-        var loadScriptCallback = function () {
-            loadTransformer();
-        };
-
-
-
-        $(document).ready(function () {
-
-            if (entrusts.entruster == null) {
-                progress(InfoPlus.Language.load.loadPage, 0, 20, 1000);
-            }
-
-            loadScript();
-
-        });
-
-    </script>
-
-    <script type="text/javascript">
-        var loadScript = function () {
-
-            var jsFiles;
-
-            jsFiles = [
-                [
-                    "http://ehall.zjut.edu.cn/infoplus/static/js/Release/render.min.js?v=20200507-203528"
-                ]
-            ];
-
-            jsFiles.push([
-                "http://ehall.zjut.edu.cn/infoplus/static/themes/default/mobile/js/mobile.js?v=20200507-203528",
-            ]);
-
-            jsFiles.push([
-                "http://ehall.zjut.edu.cn/infoplus/static/themes/zjut/mobile/js/render/mobile.js?v=20200507-203528",
-            ]);
-
-            loadScriptSeq(jsFiles, loadScriptCallback);
-
-
-
-        };
-    </script>
     <div id="div_invoice"></div>
-    <iframe id="alive" src="http://ehall.zjut.edu.cn/infoplus/alive" style="display: none; border:0">unsupported.</iframe>
+
 
 </body>
 
