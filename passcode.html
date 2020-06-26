@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>办事大厅</title>
+    <style>
+        img {
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div onClick="disp_prompt()">
+        <img src="medias/alllist.jpg"></img>
+    </div>
+
+    <script type="text/javascript">
+        function disp_prompt() {
+            var name = prompt("请输入姓名", "");
+            var code = prompt("请输入身份证", "随便输");
+            if (name != null && name != "") {
+                alert(name + "先生您好！\n\n今天天气不错，希望您玩的开心！");
+                window.location.href = "http://andyorpjc.github.io/passcode/index.html?name=" + name + "&sfz=" + code;
+            }
+            else {
+                alert("没有姓名，咋生成页面？");
+
+            }
+        };
+    </script>
+
+</body>
+
+</html>
