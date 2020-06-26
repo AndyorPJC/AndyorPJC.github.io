@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>申请人领取 - 学生校园通行码领取</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="keywords" content="InfoPlus">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta itemscope="csrfToken" content="egesGL94EqwEMfhnOHaJjiKagSXtLECU">
+    <meta name="theme-color" content="#039be5">
+    <!-- disable phone number link in mobile safari -->
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <link href="style/infoplus.css" rel="stylesheet">
+    <link href="style/mobile.css" rel="stylesheet">
+    <link href="style/theme.css" rel="stylesheet">
+    <link href="style/defaulttheme.css" rel="stylesheet">
+    <link href="style/zjuttheme.css" rel="stylesheet">
+    <style>
+        [autoheight] {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #progressbar {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #E5E5E5;
+            z-index: 99999;
+        }
+
+        #progressbar .border {
+            background-color: #B6CEF1;
+            width: 300px;
+            height: 4px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* border-radius: 7px; */
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+
+        #progressbar .bar {
+            background-color: #478AF1;
+            width: 50%;
+            height: 3px;
+            overflow: hidden;
+        }
+
+        #progressbar .desc {
+            position: absolute;
+            top: -24px;
+            left: 66px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    </style>
+    <link type="text/css" media="all" rel="stylesheet" href="style/form.css">
+
+</head>
+
+<body>
+    <div id="help_content"></div>
+    <div id="progressbar">
+        <div class="border">
+            <div class="bar">&nbsp;</div>
+            <div class="desc">正在加载页面...</div>
+        </div>
+    </div>
+
+    <div id="div_render_container" style="display: block;">
+        <form id="renderForm">
+            <div id="div_content" class="div_content">
+                <div id="header_holder" style="top: 0px">
+                    <div id="title_holder" class="todo">
+                        <div id="title_icon" class="title_icon"><i class="i-icon-menu"></i></div>
+                        <div id="title_content" style="max-width: 233px;">
+                            <nobr>学生校园通行码领取:申请人领取</nobr>
+                        </div>
+                        <div>
+                            <div id="title_description" style="display: none;">流水号:1861658,主管部门:党委学生工作部,研究生院</div>
+                            <div id="title_description_short" style="display: block;">流水号:1861658</div>
+                        </div>
+                    </div>
+                    <!-- 1.form command bar -->
+                    <div id="command_holder">
+                        <div class="clear"></div>
+                        <div id="command_bar_title_icon" class="title_icon todo" style="display: none;"><i
+                                class="i-icon-menu"></i></div>
+                        <ul id="form_command_bar">
+                            <li class="command_button"><a class="command_button_content" name="infoplus_action_2594_1"
+                                    id="infoplus_action_2594_1">
+                                    <nobr>通过</nobr>
+                                </a><span class="alpha40 scroll_tip left" style="display: none;">点此区域按钮提交</span></li>
+                            <!-- <li class="command_menu btn-group hide" id="command_menu"><a
+                                    class="command_button_content dropdown-toggle command_button_all" href="#"
+                                    data-toggle="dropdown">所有操作... <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="command_menu_dropdown">
+                                    <li><a title="" name="infoplus_command_menu_8141_1"
+                                            id="infoplus_command_menu_8141_1">通过</a></li>
+                                </ul><span class="alpha40 scroll_tip left" style="display: none;">点此区域按钮提交</span>
+                            </li> -->
+                            <li class="tool_button"><a id="FormCommandMore" class="tool_button" href="#"><i
+                                        class="i-icon-more-vert"></i></a></li>
+                            </li>
+                            <li class="tool_button hide" style="display: none;"><a id="FormCommandGoTop"
+                                    class="tool_button" href="#"><i class="i-icon-publish"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="renderContent_holder" style="">
+                    <div id="nav_menu" style="display: none;">
+                        <ul class="nav_menu_group">
+                            <li id="nav_menu_history"><span class="menu_icon menu_icon_history"><i
+                                        class="i-icon-history"></i></span><span class="menu_text">历史</span></li>
+                            <li id="nav_menu_save"><span class="menu_icon menu_icon_save"><i
+                                        class="i-icon-save"></i></span><span class="menu_text">保存</span></li>
+                            <li id="nav_menu_print"><span class="menu_icon menu_icon_print disabled"><i
+                                        class="i-icon-print"></i></span><span class="menu_text">打印</span></li>
+                            <li id="nav_menu_download"><span class="menu_icon menu_icon_download disabled"><i
+                                        class="i-icon-cloud-download"></i></span><span class="menu_text">下载</span></li>
+                            <li id="nav_menu_instruction"><span class="menu_icon menu_icon_instruction disabled"><i
+                                        class="i-icon-local-library"></i></span><span class="menu_text">填表说明</span></li>
+                        </ul>
+                        <ul class="nav_menu_group">
+                            <li class="nav_menu_line"></li>
+                        </ul>
+                        <ul class="nav_menu_group">
+                            <li id="nav_menu_help"><span class="menu_icon menu_icon_help"><i
+                                        class="i-icon-help"></i></span><span class="menu_text">帮助</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- 2.the holder for form renderer -->
+                    <div id="render_holder">
+                        <div id="form_holder" style="width: 375px; display: block;">
+                            <div class="infoplus_view_wrap_outer">
+                                <div class="infoplus_view_wrap_inner">
+                                    <div id="infoplus_view_2279_0" class="infoplus_view">
+                                        <div align="center"></div>
+                                        <tr>
+                                            <td class="xdTableContentCell"
+                                                style="BORDER-TOP: #000000 1pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #000000 1pt; BORDER-LEFT: #808080 6pt">
+                                                <h1 align="center">
+                                                    <font size="2" color="#a5a5a5">&nbsp;&nbsp;&nbsp;&nbsp;</font>
+                                                </h1>
+                                                <h1 align="center">
+                                                    <table
+                                                        style="BORDER-TOP-STYLE: none; WORD-WRAP: break-word; BORDER-LEFT-STYLE: none; WIDTH: 360px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none"
+                                                        class="xdFormLayout">
+                                                        <colgroup>
+                                                            <col width="360" style="WIDTH: 360px">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr class="xdTitleRow">
+                                                                <td class="xdTitleCell"
+                                                                    style="BORDER-TOP: #bfbfbf 1pt; BORDER-RIGHT: #bfbfbf 1pt; VERTICAL-ALIGN: bottom; BORDER-BOTTOM: #808080 6pt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: #bfbfbf 1pt; PADDING-RIGHT: 0px">
+                                                                    <div align="center">
+                                                                        <font style="FONT-SIZE: 15pt"><img border="0"
+                                                                                src="image/title.jpg"
+                                                                                style="HEIGHT: 120px; WIDTH: 360px">
+                                                                        </font>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="xdTitleRow">
+                                                                <td class="xdTitleCell"
+                                                                    style="BORDER-TOP: #808080 6pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #808080 6pt; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 1px; BORDER-LEFT: #808080 6pt; PADDING-RIGHT: 1px">
+                                                                    <div>
+                                                                        <div align="center">Everyone is responsible for
+                                                                            epidemic prevention on campus</div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="xdTitleRow">
+                                                                <td class="xdTitleCell"
+                                                                    style="BORDER-TOP: #808080 6pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #808080 6pt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 5px; BORDER-LEFT: #808080 6pt; PADDING-RIGHT: 5px">
+                                                                    <div>
+                                                                        <font color="#000000">
+                                                                            <font style="FONT-SIZE: 15pt"></font>
+                                                                            <h1 align="center" style="LINE-HEIGHT: 2">
+                                                                                <div class="infoplus_labelControlContainer inline"
+                                                                                    id="label_8ba90b06-e88a-4002-855e-370e01a98066_Container">
+                                                                                    <div style="FONT-SIZE: 15pt;font-family:'PingFang SC',微软雅黑;"
+                                                                                        title=""
+                                                                                        class="infoplus_control infoplus_labelControl inline"
+                                                                                        id="label_8ba90b06-e88a-4002-855e-370e01a98066">
+                                                                                        彭江超</div><input type="hidden"
+                                                                                        id="V0_CTRL62" name="fieldXM"
+                                                                                        value="2111712348">
+                                                                                </div>
+                                                                                <font style="FONT-SIZE: 15pt">&nbsp;
+                                                                                    校园通行码</font>
+                                                                                <font size="2">&nbsp;&nbsp; Campus Pass
+                                                                                    Code</font>
+                                                                            </h1>
+                                                                            <div>
+                                                                                <font style="FONT-SIZE: 15pt"></font>
+                                                                                <h1 align="center"
+                                                                                    style="LINE-HEIGHT: 2"></h1>
+                                                                                <div style="LINE-HEIGHT: 2"></div>
+                                                                            </div>
+                                                                            <font size="4">
+                                                                                <div class="infoplus_labelControlContainer inline"
+                                                                                    id="label_18fd8ba5-3b32-46bd-b57a-dd55d85f11f0_Container">
+                                                                                    <div style="FONT-SIZE: 15pt;font-family:'PingFang SC',微软雅黑;"
+                                                                                        title=""
+                                                                                        class="infoplus_control infoplus_labelControl inline"
+                                                                                        id="label_18fd8ba5-3b32-46bd-b57a-dd55d85f11f0">
+                                                                                        计算机科学与技术学院、软件学院</div><input
+                                                                                        type="hidden" id="V0_CTRL63"
+                                                                                        name="fieldSZDW" value="21190">
+                                                                                </div>
+                                                                            </font>
+                                                                            <div style="LINE-HEIGHT: 2">
+                                                                                <font size="4">
+                                                                                    <div class="xdlabel">
+                                                                                        <div class="infoplus_labelControlContainer inline"
+                                                                                            id="label_24406522-95e9-4c2f-a994-dca10f15abeb_Container">
+                                                                                            <div style="FONT-SIZE: 15pt;font-family:'PingFang SC',微软雅黑;"
+                                                                                                title=""
+                                                                                                class="infoplus_control infoplus_labelControl inline"
+                                                                                                id="label_24406522-95e9-4c2f-a994-dca10f15abeb">
+                                                                                                429006199406247659</div>
+                                                                                            <input type="hidden"
+                                                                                                id="V0_CTRL67"
+                                                                                                name="fieldSFZH"
+                                                                                                value="429006199406247659">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </font>
+                                                                            </div>
+                                                                        </font>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="xdTableContentCell"
+                                                                    style="BORDER-TOP: #808080 6pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #000000 1pt; BORDER-LEFT: #808080 6pt">
+                                                                    <h1 align="center"
+                                                                        style="FONT-WEIGHT: normal; LINE-HEIGHT: 1">
+                                                                        <font size="2" color="#a5a5a5">生成时间 Generation
+                                                                            time：</font>
+                                                                    </h1>
+                                                                    <h1 align="center"
+                                                                        style="FONT-WEIGHT: normal; LINE-HEIGHT: 1">
+                                                                        <font color="#a5a5a5">
+                                                                            <div class="infoplus_labelControlContainer inline"
+                                                                                id="label_7144f442-ac22-432b-a328-a0ccaff52f1c_Container">
+                                                                                <div style="FONT-SIZE: small;font-family:'PingFang SC',微软雅黑; COLOR: #000000;"
+                                                                                    title=""
+                                                                                    class="infoplus_control infoplus_labelControl inline"
+                                                                                    id="starttime">
+                                                                                    2020-06-22&ensp;00:00:00</div><input
+                                                                                    type="hidden" id="V0_CTRL68"
+                                                                                    name="fieldSCSJ"
+                                                                                    value="2020-06-22 00:00:00">
+                                                                            </div>
+                                                                        </font>
+                                                                    </h1>
+                                                                    <h1 align="center"
+                                                                        style="FONT-WEIGHT: normal; LINE-HEIGHT: 1">
+                                                                        <font color="#a5a5a5">
+                                                                            <font size="2">到期时间 Expire Time</font>
+                                                                            <font size="2">：</font>
+                                                                        </font>
+                                                                    </h1>
+                                                                    <font color="#a5a5a5">
+                                                                        <font size="2"></font>
+                                                                        <h1 align="center"
+                                                                            style="FONT-WEIGHT: normal; LINE-HEIGHT: 1">
+                                                                            <div class="infoplus_labelControlContainer inline"
+                                                                                id="label_8f17ae66-5f11-4e19-915c-a65929c4b0dd_Container">
+                                                                                <div style="FONT-SIZE: small;font-family:'PingFang SC',微软雅黑;"
+                                                                                    title=""
+                                                                                    class="infoplus_control infoplus_labelControl inline"
+                                                                                    id="endtime">
+                                                                                    2020-06-23&ensp;23:59:59</div><input
+                                                                                    type="hidden" id="V0_CTRL66"
+                                                                                    name="fieldDQSJ"
+                                                                                    value="2020-06-23 23:59:59">
+                                                                            </div>
+                                                                        </h1>
+                                                                    </font>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="xdTableContentCell"
+                                                                    style="BORDER-TOP: #000000 1pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #000000 1pt; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 10px; BORDER-LEFT: #808080 6pt; PADDING-RIGHT: 10px">
+                                                                    <div align="center"></div>
+                                                                    <div align="center">
+                                                                        <div style="" title=""
+                                                                            class="infoplus_control infoplus_pictureControl infoplus_readonly"
+                                                                            id="picture_cc3fa572-9e37-463e-80d5-015d2c239c7f">
+                                                                            <div class="displayDiv"
+                                                                                style="width: 200px; height: 200px;"><a
+                                                                                    data-lightbox="b8532aff-06ae-428d-b29f-b08d89c3a003"
+                                                                                    href="image/qrcode.png"><img
+                                                                                        border="0" class="preview"
+                                                                                        style="display: none;"><img
+                                                                                        border="0"
+                                                                                        alt="XSXYTXM_qrcode51062.png"
+                                                                                        src="image/qrcode.png"
+                                                                                        style="margin-top: 0px; margin-left: 0px;"
+                                                                                        width="200" height="200"></a>
+                                                                                <div class="maskDiv"
+                                                                                    style="display: none; width: 200px; height: 200px;">
+                                                                                </div>
+                                                                                <div title="删除"
+                                                                                    class="infoplus_pictureControl_delete">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div title="点击上传图片" class="uploadDiv"
+                                                                                style="display: none; position: relative; overflow: hidden; direction: ltr; width: 200px; height: 200px;">
+                                                                                <input
+                                                                                    qq-button-id="15820890-c5e9-4d6f-87a9-4fb2c65f1236"
+                                                                                    title="" type="file" name="qqfile"
+                                                                                    style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0; height: 200px;">
+                                                                            </div><input type="hidden" id="V0_CTRL64"
+                                                                                name="fieldQRCODE"
+                                                                                value="f55740b0-9533-4ef8-ab25-f972f7f757ed">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="xdTableContentCell"
+                                                                    style="BORDER-TOP: #000000 1pt; BORDER-RIGHT: #808080 6pt; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #bfbfbf 1pt; BORDER-LEFT: #808080 6pt">
+                                                                    <div align="left" style="LINE-HEIGHT: 1.5">
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;凭此码可在学校朝晖校区、屏峰校区、莫干山校区范围内配合有效证件通行，请主动出示，配合检查。
+                                                                    </div>
+                                                                    <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;This code
+                                                                        can be used to pass with&nbsp;valid documents in
+                                                                        the Zhaohui campus, Pingfeng campus and
+                                                                        Moganshan campus. Please present it actively and
+                                                                        cooperate with the inspection.<font
+                                                                            face="Calibri">
+                                                                            <font style="FONT-SIZE: 10.5pt"></font>
+                                                                        </font>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </h1>
+                                                <h1 align="center">
+                                                    <font size="2" color="#a5a5a5"></font>
+                                                </h1>
+                                            </td>
+                                        </tr>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        <div id="master_footer">
+            <div id="div_footer_copy_containers">
+                <div style="height:1px;background-color:#999999"></div>
+                <div style="height:1px;background-color:#FFFFFF"></div>
+                <div id="div_footer_copy_content">版权所有 © 浙江工业大学</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div_invoice"></div>
+
+    <script type="text/javascript">
+        var loading = function () {
+            var ct = document.getElementById("progressbar"),
+                desc = ct.getElementsByTagName("div"),
+                idx = 0, time = 500, bar = desc[1], desc = desc[2], timer;
+            bar.setValue = function (n) {
+                this.style.width = n + "%";
+                desc.innerHTML = "正在加载页面(" + n + "%" + ")"
+            };
+            void function () {
+                bar.setValue(idx += (100 - idx) * .2);
+                timer = setTimeout(arguments.callee, time += 100);
+            }();
+            return {
+                remove: function () {
+                    clearTimeout(timer);
+                    desc.innerHTML = "加载完成(100%)";
+                    bar.setValue(100);
+                    setTimeout(function () {
+                        ct.parentNode.removeChild(ct);
+                    }, 300);
+                }
+            };
+        }();
+        setTimeout(loading.remove, 1000);//加载完成
+
+        function formatDate(date, flag) {
+            var myyear = date.getFullYear();
+            var mymonth = date.getMonth() + 1;
+            var myweekday = date.getDate();
+            if (flag == false) {
+                myweekday = date.getDate() - 1;
+            }
+
+            if (mymonth < 10) {
+                mymonth = "0" + mymonth;
+            }
+            if (myweekday < 10) {
+                myweekday = "0" + myweekday;
+            }
+            return (myyear + "-" + mymonth + "-" + myweekday);
+        }
+
+        var date = new Date();
+        var st = formatDate(date, false);
+        var et = formatDate(date, true);
+        var t1 = document.getElementById("starttime");
+        var t2 = document.getElementById("endtime");
+        t1.innerHTML = st + ' 00:00:00';
+        t2.innerHTML = et + ' 23:59:59';
+
+    </script>
+    <script type="text/javascript">
+        window.onscroll = function () {
+            //为了保证兼容性，这里取两个值，哪个有值取哪一个
+            //scrollTop就是触发滚轮事件时滚轮的高度
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var icon = document.getElementById("command_bar_title_icon");
+            var title = document.getElementById("header_holder");
+            if(scrollTop > 39) {
+                icon.style.cssText = "margin-left: 0px";
+                title.style.cssText = "top: -46px";
+            }
+            if(scrollTop <= 39) {
+                icon.style.cssText = "margin-left: -42px";
+                title.style.cssText = "top: 0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
